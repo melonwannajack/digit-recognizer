@@ -1,4 +1,4 @@
-#!python
+#!python3
 from PIL import Image
 import numpy as np
 
@@ -13,7 +13,7 @@ def transform_array_to_labeled_matrix(array, shape=28):
 
 
 def read_line_image(line):
-    return map(int, line.split(','))
+    return list(map(int, line.split(',')))
 
 
 def show_string_as_image(line):
